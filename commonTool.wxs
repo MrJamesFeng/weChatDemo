@@ -1,0 +1,9 @@
+var foo = "hello moudle";
+var bar = function (b) {
+  return b;
+};
+module.exports = {
+  foo: foo,
+  bar: bar
+};
+module.exports.msg = "module msg";

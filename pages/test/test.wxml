@@ -1,0 +1,103 @@
+<!--pages/test/test.wxml-->
+<!-- <text>pages/test/test.wxml</text> -->
+<import src='testTemplate.wxml' />
+<!-- <view id='item-{{id}}' style='background:red'></view>
+<view wx:if='{{condition}}'><text>xxxxxxxooooooo</text></view>
+<checkbox checked="{{check}}"> </checkbox>
+<view hidden="{{flag ? true : false}}"> Hidden </view>
+<view> {{a + b + 5}} + {{c*100}} + d </view>
+<view wx:if="{{length > 5}}"><text>wqeqwdsd</text> </view>
+<view>{{"hello" + name}}</view>
+<view wx:for="{{[zero, 1, 2, 3, 4]}}"> {{item}} </view> -->
+
+<!-- <template is='objectCombine' data="{{for: a, bar: b}}"></template> -->
+<!-- <template is="objectCombine" data="{{...obj1, ...obj2, e: 5}}"></template> -->
+
+<!--列表渲染  -->
+<!-- <view wx:for="{{arr}}">{{index}}:{{item.foo}}</view>
+<view wx:for="{{arr}}" wx:for-index="idx" wx:for-item="itemName">{{idx}}:{{itemName.foo}}</view> -->
+<!-- <view wx:for="{{arr1}}" wx:for-item="i">
+  <view wx:for=" {{arr2}} " wx:for-item="j">
+    <view wx:if="{{i<=j}}">
+      <!-- {{i}} * {{j}} = {{i*j}} -->
+<!-- {{index}}
+    </view>
+  </view>
+</view> -->
+
+<!-- <view wx:for="{{arr1}}" wx:for-index="i">
+  <view wx:for=" {{arr2}} " wx:for-index="j">
+    <view wx:if="{{i<=j}}">
+       {{i}} * {{j}} = {{i*j}} 
+    
+    </view>
+  </view>
+</view> -->
+<!--key:item为对象时，item的一个属性  -->
+<!-- <switch wx:for="{{objectArray}}" wx:key="unique" style="display: block;"> {{item.id}} </switch>
+<button bindtap="switch"> Switch </button>
+<button bindtap="addToFront"> Add to the front </button> -->
+
+<!--key:item为字符串时，item自身  -->
+<!-- <switch wx:for="{{numberArray}}" wx:key="*this" style="display: block;"> {{item}} </switch>
+<button bindtap="addNumberToFront"> Add to the front </button> -->
+<!-- 
+<view wx:if="{{length>5}}">1</view>
+<view wx:elif="{{length>2}}">2</view>
+<view wx:else>3</view> -->
+
+<!-- <block wx:if="{{length>5}}">
+  <view>1</view>
+  <view>2</view>
+  <view>3</view>
+</block>
+<block wx:elif="{{length>2}}">
+  <view>1</view>
+  <view>1</view>
+  <view>1</view>
+</block>
+<block wx:else>
+  <view>2</view>
+  <view>2</view>
+  <view>2</view>
+</block> -->
+
+
+<!--template  -->
+<!-- <template is="templateName" data="{{...item}}">
+</template> -->
+
+<!-- <block wx:for="{{[1, 2, 3, 4, 5]}}">
+    <template is="{{item % 2 == 0 ? 'even' : 'odd'}}"/>
+</block> -->
+
+
+
+<!--事件  -->
+<!-- <view id="tapTest" data-hi="WeChat" bindtap="tapName" class='tapTestC'> Click me! </view>  -->
+
+<!-- <view id="outer" bindtap="handleTap1" capture-bind:touchstart="captureTap1">
+  outer view
+  <view id="middle" bindtap="handleTap2" capture-bind:touchstart="captureTap2" >
+    middle view
+    <view id="inner" bindtap="handleTap3" capture-bind:touchstart="captureTap3">
+      inner view
+    </view>
+  </view>
+</view> -->
+<!-- <wxs src='../../tool.wxs' module='tool'/> -->
+<!-- <wxs src='../../commonTool.wxs' module='commonTool'/>
+<view>{{commonTool.msg}}</view>
+<view>{{commonTool.bar(commonTool.foo)}}</view> -->
+
+<!-- <wxs module='foo'>
+  var msg = "this is a module msg";
+  module.exports = {
+    msg: msg
+  };
+</wxs>
+<view>{{foo.msg}}</view>
+<view>{{date}}</view> -->
+
+
+<view class='im'>我是，，，</view>

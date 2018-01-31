@@ -1,0 +1,35 @@
+<!-- <template name='postItemTemplate'>
+  <view class='post-item'>
+    <view class='header'>
+      <image class='avtar' src='{{item.avtar}}'></image>
+      <text class='nickName'>"{{item.nickName}}"</text>
+    </view>
+
+    <image class='infoImage' src='{{item.infoImage}} ' mode='scaleToFill'> </image>
+    <text class='post-content'>'{{item.content}}'</text>
+    <view class='bottom'>
+      <image class='favImage' src='{{item.favImage}}'></image>
+      <text class='favNum'>"{{item.favNum}}"</text>
+      <image class='markImage' src='{{item.markImage}}'></image>
+      <text class='mark'>"{{item.mark}}"</text>
+    </view>
+  </view>
+</template> -->
+
+<template name='postItemTemplate'>
+  <view class='post-item'>
+    <view class='header'>
+      <image class='avtar' src='{{avtar}}'></image>
+      <text class='nickName'>"{{nickName}}"</text>
+    </view>
+
+    <image class='infoImage' src='{{infoImage}} ' mode='scaleToFill'> </image>
+    <text class='post-content'>'{{content}}'</text>
+    <view class='bottom'>
+      <image class='favImage' src='{{favImage}}'></image>
+      <text class='favNum'>"{{favNum}}"</text>
+      <image class='markImage' src='{{markImage}}'></image>
+      <text class='mark'>"{{mark}}"</text>
+    </view>
+  </view>
+</template>

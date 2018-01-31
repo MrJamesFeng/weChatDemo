@@ -1,0 +1,13 @@
+/* pages/test/test.wxss */
+.tapTestC{
+  margin-top: 2000rpx;
+}
+
+.im::after{
+  /* height: 300rpx; */
+  width: 100%;
+  background-color: blue;
+  content: "sdsdsdsadasdsadasdasdasdasdsadasdasdafacasdwqdwadasdsafsefefscasdasdewqfscscadsadwfcawfa";
+  align-content: center;
+  letter-spacing: 20rpx;
+}

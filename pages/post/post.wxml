@@ -1,0 +1,43 @@
+<!--pages/post/post.wxml-->
+<!-- <text>pages/post/post.wxml</text> -->
+<import src='postTemplate.wxml' />
+<swiper class='post-swiper' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+
+  <block wx:for='{{imgUrls}}'>
+    <swiper-item class='swiper-item' mode='scaleToFill'>
+      <image src='{{item}}'></image>
+    </swiper-item>
+  </block>
+</swiper>
+<view class='content'>
+  <block wx:for='{{postList}}' wx:for-item="postItem">
+    <!-- <view class='post-item'>
+      <view class='header'>
+        <image class='avtar' src='{{item.avtar}}'></image>
+        <text class='nickName'>"{{item.nickName}}"</text>
+      </view>
+
+      <image class='infoImage' src='{{item.infoImage}} ' mode='scaleToFill'> </image>
+      <text class='post-content'>'{{item.content}}'</text>
+      <view class='bottom'>
+        <image class='favImage' src='{{item.favImage}}'></image>
+        <text class='favNum'>"{{item.favNum}}"</text>
+        <image class='markImage' src='{{item.markImage}}'></image>
+        <text class='mark'>"{{item.mark}}"</text>
+      </view>
+    </view> -->
+
+
+      <!-- <template is='postItemTemplate' data='{{...item}}'/>   -->
+      <view bindtap='postTap' data-post-id='{{postItem.postid}}'>
+      <template is='postItemTemplate' data='{{...postItem}}' />
+    </view>  
+
+  </block>
+
+</view>
+<!-- 
+<button bindtap="changeIndicatorDots"> indicator-dots </button>
+<button bindtap="changeAutoplay"> autoplay </button>
+<slider bindchange="intervalChange" show-value min="500" max="2000"/> interval
+<slider bindchange="durationChange" show-value min="1000" max="10000"/> duration -->

@@ -1,0 +1,9 @@
+/* pages/post/post.wxss */
+@import 'postTemplate.wxss';
+
+.post-swiper{
+  width: 100%;
+  height: 400rpx;
+  background-color: blue;
+}
+

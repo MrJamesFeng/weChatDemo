@@ -1,0 +1,53 @@
+.post-swiper swiper-item{
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-item image{
+  width: 100%;
+  height: 100%;
+}
+.content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.header{
+  width: 100%;
+   flex-direction:  row;
+   vertical-align: middle;
+}
+
+.avtar{
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.infoImage{
+  width: 100%;
+}
+.favImage{
+  width: 40rpx;
+  height: 40rpx;
+}
+.post-item{
+  margin-top: 30rpx;
+  border: 1px solid #eee;
+  margin-bottom: 10rpx;
+}
+.markImage{
+  width: 40rpx;
+  height: 40rpx;
+}
+.bottom{
+  vertical-align: middle;
+}
+.post-content{
+  margin-top: 10rpx;
+  width: 100%;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-bottom: 10rpx;
+  color: #333;
+  line-height: 40px;
+}

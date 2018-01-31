@@ -1,0 +1,6 @@
+<!--pages/component/component.wxml-->
+<!-- <text>pages/component/component.wxml</text> -->
+<view class='wrapper'>
+<view>组件内部节点</view>
+<slot></ slot>
+</view>
