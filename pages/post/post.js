@@ -99,9 +99,10 @@ Page({
   
 
   postTap:function(e){
-    console.log(e.currentTarget.dataset.postId)
+    // console.log(e.currentTarget.dataset.postId)
+    var postId = e.currentTarget.dataset.postId
     wx.navigateTo({
-      url: '../postDetail/postDetail',
+      url: '../postDetail/postDetail'+"?"+'postId='+postId,
     })
   }
 })

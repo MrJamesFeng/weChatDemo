@@ -1,1 +1,56 @@
 /* pages/postDetail/postDetail.wxss */
+.postDetail-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.postDetail-headerImage{
+  width: 100%;
+}
+.postDetail-headerInfo{
+  width: 100%;
+  flex-direction: row;
+  vertical-align: middle;
+  height: 80rpx;
+}
+.postDetail-avatar{
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 20rpx;
+}
+.postDetail-author{
+  margin-left: 10rpx;
+}
+.postDetail-postDayTitle{
+  margin-left: 10rpx;
+}
+.postDetail-postMarkInfoContent{
+  width: 100%;
+  flex-direction:  row;
+}
+.postDetail-postMarkInfoShare,
+.postDetail-postMarkInfoShared{
+  width: 40rpx;
+  height: 40rpx;
+  float: right;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+.postDetail-postMarkInfoSubmit,
+.postDetail-postMarkInfoSubmited{
+  width: 40rpx;
+  height: 40rpx;
+  float: right;
+  
+}
+
+.postDetail-postMarkInfoLine{
+  width: 85%;
+  z-index: -99;
+  height: 1px;
+  background-color: #e5e5e5;
+  vertical-align: middle;
+  position: relative;
+   top: 23rpx;
+   margin-right: 40rpx;
+}

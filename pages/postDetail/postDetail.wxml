@@ -1,2 +1,43 @@
 <!--pages/postDetail/postDetail.wxml-->
-<text>pages/postDetail/postDetail.wxml</text>
+<!-- <text>pages/postDetail/postDetail.wxml</text> -->
+<!-- <view class='postDetail-container'>
+  <image class='postDetail-headerImage' src='../../images/big.jpg'> </image>
+    <view class='postDetail-headerInfo'>
+      <image class='postDetail-avatar' src='../../images/avatar.png'></image>
+      <text class='postDetail-author'>胡歌</text>
+      <text class='postDetail-postDayTitle'>发表于</text>
+      <text class='postDetail-postDate'>3天前</text>
+    </view>
+    <text class='postDetail-postQuestion'>好玩吗？</text>
+    <view class='postDetail-postMarkInfoContent'>
+      <view class='postDetail-postMarkInfo'>
+        <image class='postDetail-postMarkInfoShare' src='../../images/share.png'></image>
+        <image class='postDetail-postMarkInfoSubmit' src='../../images/submit.png'></image>
+      </view>
+      <view class='postDetail-postMarkInfoLine'></view>
+    </view>
+    <text class='postDetail-postMarkReplay'>verygood verygood verygood verygood verygood</text>
+</view> -->
+
+<view class='postDetail-container'>
+    <image class='postDetail-headerImage' src='{{postData.headerImage}}' catchtap='onMusicTap'> </image>
+    <view class='postDetail-headerInfo'>
+      <image class='postDetail-avatar' src='{{postData.avatar}}'></image>
+      <text class='postDetail-author'>{{postData.author}}</text>
+      <text class='postDetail-postDayTitle'>发表于</text>
+      <text class='postDetail-postDate'>{{postData.postDate}}</text>
+    </view>
+    <text class='postDetail-postQuestion'>{{postData.postQuestion}}</text>
+    <view class='postDetail-postMarkInfoContent'>
+      <view class='postDetail-postMarkInfo'>
+         <image  wx:if="{{shared}}"  class='postDetail-postMarkInfoShare' src='{{postData.postMarkInfoShared}}' catchtap='shareTap'></image>
+         <image  wx:else class='postDetail-postMarkInfoShare' src='{{postData.postMarkInfoShare}}' catchtap='shareTap'></image>
+        <image wx:if="{{submited}}" class='postDetail-postMarkInfoSubmit'  src='{{postData.postMarkInfoSubmited}}' catchtap='submitTap'></image>
+        <image wx:else class='postDetail-postMarkInfoSubmit'  src='{{postData.postMarkInfoSubmit}}' catchtap='submitTap'></image>  
+
+      </view>
+      <view class='postDetail-postMarkInfoLine'></view>
+    </view>
+    <text class='postDetail-postMarkReplay'>{{postData.postMarkReplay}}</text>
+
+</view>
